@@ -1,5 +1,5 @@
 (function(){
-  var REPO='deumojunior-svg/shiftmemories-site', ASSET='ShiftMemories-android.apk';
+var REPO='deumojunior-svg/shiftmemories-site', ASSET='app-release.apk';
   var sel=document.getElementById('lang');
   function pick(){
     var s=null;try{s=localStorage.getItem('sm-lang')}catch(e){}
