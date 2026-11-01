@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+<meta content="#11252b" name="theme-color"/>
+<meta content="ShiftMemories : planning, heures travaillées, notes, photos et rappels pour les infirmières libérales." name="description"/>
+<meta content="light" name="color-scheme"/>
+<link href="manifest.webmanifest" rel="manifest"/>
+<meta content="ShiftMemories" name="application-name"/>
+<link href="icons/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="yes" name="apple-mobile-web-app-capable"/>
+<meta content="ShiftMemories" name="apple-mobile-web-app-title"/>
+<link href="icons/icon-192.png" rel="icon" type="image/png"/>
+<link href="styles.css" rel="stylesheet"/>
+<title>ShiftMemories · Vos journées, votre rythme</title>
+<link href="icons/icon-512.png" rel="icon" sizes="512x512" type="image/png"/></head>
+<body>
+<div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
+<div class="shell">
+<aside aria-label="Navigation principale" class="sidebar" id="sidebar">
+<div class="brand"><span aria-hidden="true" class="brand-icon"><svg fill="none" viewbox="0 0 40 40"><path d="M20 7v26M7 20h26" stroke="currentColor" stroke-linecap="round" stroke-width="6"></path><circle cx="31.5" cy="9" fill="#D7F9AF" r="3.5"></circle></svg></span><span><strong>shift<span class="brand-italic">memories.</span></strong><small>Votre quotidien, simplifié</small></span></div>
+<div class="nav-label">ESPACE DE TRAVAIL</div>
+<nav id="main-nav">
+<button class="nav-item active" data-route="dashboard"><span class="nav-symbol" data-icon="home"></span>Vue d’ensemble</button>
+<button class="nav-item" data-route="calendar"><span class="nav-symbol" data-icon="calendar"></span>Calendrier</button>
+<button class="nav-item" data-route="days"><span class="nav-symbol" data-icon="list"></span>Mes journées</button>
+<button class="nav-item" data-route="import"><span class="nav-symbol" data-icon="upload"></span>Importer un planning</button>
+<button class="nav-item" data-route="reports"><span class="nav-symbol" data-icon="chart"></span>Bilans &amp; exports</button>
+</nav>
+<div class="nav-label second-label">PERSONNALISATION</div>
+<nav><button class="nav-item" data-route="settings"><span class="nav-symbol" data-icon="settings"></span>Paramètres</button></nav>
+<div class="side-bottom"><a class="btn btn-secondary" href="../" style="margin-bottom:13px;width:100%;text-decoration:none">← Site ShiftMemories</a><div class="side-quote"><span class="sparkle">✦</span><strong>Un peu de temps pour vous.</strong><p>Vos journées sont bien remplies. Votre organisation peut rester légère.</p></div><div class="privacy"><span data-icon="shield"></span> Données conservées sur cet appareil</div></div>
+</aside>
+<div class="mobile-top"><button aria-label="Ouvrir le menu" class="icon-button" data-icon="menu" id="menu-toggle"></button><div class="brand-mini"><span class="brand-dot">✳</span> shiftmemories.</div><button aria-label="Ajouter une journée" class="icon-button" data-action="new-shift" data-icon="plus"></button></div>
+<main class="main-panel">
+<header class="topbar"><div class="crumb"><span class="crumb-muted">Mon espace</span><span class="slash">/</span><strong id="route-name">Vue d’ensemble</strong></div><div class="top-actions"><span class="top-date" id="today-chip"></span><button class="btn btn-primary btn-top" data-action="new-shift"><span data-icon="plus"></span> Ajouter une journée</button></div></header>
+<div aria-live="polite" class="page" id="view"></div>
+<footer class="footer">ShiftMemories <span>✳</span> Conçu pour votre rythme. <span class="footer-right">Vos données restent sur votre appareil.</span></footer>
+</main>
+</div>
+<div aria-label="Navigation mobile" class="mobile-nav" id="mobile-nav"><button data-route="dashboard"><span data-icon="home"></span>Accueil</button><button data-route="calendar"><span data-icon="calendar"></span>Planning</button><button aria-label="Ajouter" class="mobile-add" data-action="new-shift"><span data-icon="plus"></span></button><button data-route="days"><span data-icon="list"></span>Journées</button><button data-route="reports"><span data-icon="chart"></span>Bilans</button></div>
+<div id="modal-root"></div><div aria-live="polite" id="toast-root" role="status"></div><input accept="application/json,.json" hidden="" id="backup-restore-input" type="file"/>
+<script defer="" src="app.js"></script>
+<script defer="" src="navigation-mobile.js"></script>
+<script defer="" src="install-helper.js"></script>
+</body>
+</html>

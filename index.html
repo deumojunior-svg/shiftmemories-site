@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ShiftMemories · Vos gardes, vos heures, votre équilibre</title>
+<meta name="description" content="ShiftMemories, l’agenda des soignants : planning, pointage, bilans du mois. Android (APK), iPhone et ordinateur.">
+<meta name="theme-color" content="#11252b">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ShiftMemories · Vos gardes. Vos heures. Votre équilibre.">
+<meta property="og:description" content="L’agenda des soignants : planning, pointage, bilans du mois. Android, iPhone et ordinateur.">
+<meta property="og:image" content="https://deumojunior-svg.github.io/shiftmemories-site/assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="icons/icon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:ital,opsz,wght@0,9..144,600;1,9..144,500&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="nav" id="top">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top" aria-label="ShiftMemories"><img src="assets/logo.png" alt="" width="36" height="36"><span>shift<em>memories.</em></span></a>
+    <nav class="links" aria-label="Navigation">
+      <a href="#story" data-i18n="navStory">Mon histoire</a>
+      <a href="#screens" data-i18n="navScreens">L’application</a>
+      <a href="#download" data-i18n="navDownload">Télécharger</a>
+      <a href="#faq" data-i18n="navFaq">Questions</a>
+    </nav>
+    <label class="lang"><span class="sr">Language</span>
+      <select id="lang" aria-label="Language">
+        <option value="fr">Français</option><option value="en">English</option><option value="de">Deutsch</option><option value="it">Italiano</option><option value="es">Español</option>
+      </select>
+    </label>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="blob b1"></div><div class="blob b2"></div>
+  <div class="wrap hero-in">
+    <div class="hero-text">
+      <p class="kicker" data-i18n="heroKicker">POUR LES SOIGNANTS</p>
+      <h1 data-i18n="heroTitle">Vos gardes.<br>Vos heures.<br><em>Votre équilibre.</em></h1>
+      <p class="lead" data-i18n="heroText">ShiftMemories est l’agenda des soignants : planning, pointage, bilans du mois et souvenirs de vos journées, au même endroit. Sur Android, iPhone et ordinateur.</p>
+      <div class="cta">
+        <a class="btn btn-light" href="#android" data-apk-hero><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 5-5m-5 5-5-5M5 20h14"/></svg><span data-i18n="ctaAndroid">Télécharger pour Android</span></a>
+        <a class="btn btn-ghost" href="app/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H4zM9 20h6M12 16v4"/></svg><span data-i18n="ctaWeb">Utiliser en ligne</span></a>
+      </div>
+      <p class="note" data-i18n="heroNote">Vos données restent sur votre appareil</p>
+    </div>
+    <div class="hero-phones" aria-hidden="true">
+      <div class="phone p-left"><img src="assets/screen-reports.jpg" alt="" loading="eager"></div>
+      <div class="phone p-mid"><img src="assets/screen-home.jpg" alt="" loading="eager"></div>
+      <div class="phone p-right"><img src="assets/screen-planning.jpg" alt="" loading="eager"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="features">
+  <div class="wrap">
+    <p class="kicker dark" data-i18n="featKicker">CE QU’ELLE FAIT</p>
+    <h2 data-i18n="featTitle">Simple, même les jours chargés.</h2>
+    <div class="grid4">
+      <article class="card reveal"><span class="ico"><svg viewBox="0 0 24 24"><path d="M4 6h16v14H4zM4 10h16M8 3v4M16 3v4"/></svg></span><h3 data-i18n="f1t">Un planning lisible</h3><p data-i18n="f1d">Vos gardes et votre vie personnelle sur un même calendrier, repérées par couleur.</p></article>
+      <article class="card reveal"><span class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 7v5l3 2"/></svg></span><h3 data-i18n="f2t">Un pointage en deux gestes</h3><p data-i18n="f2d">Arrivée, départ : c’est noté. Les notes et les photos sont facultatives, pour garder le souvenir de la journée.</p></article>
+      <article class="card reveal"><span class="ico"><svg viewBox="0 0 24 24"><path d="M5 20V10M12 20V4M19 20v-7"/></svg></span><h3 data-i18n="f3t">Des bilans automatiques</h3><p data-i18n="f3d">Heures prévues et réalisées, mois par mois, avec un montant estimé brut. Fini le recopiage à la main.</p></article>
+      <article class="card reveal"><span class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg></span><h3 data-i18n="f4t">Dans votre langue</h3><p data-i18n="f4d">Français, English, Deutsch, Italiano et Español.</p></article>
+    </div>
+    <div class="strip reveal"><span class="ico"><svg viewBox="0 0 24 24"><path d="M12 3 5 6v6c0 4 3 7 7 9 4-2 7-5 7-9V6z"/></svg></span><div><h3 data-i18n="f5t">Chez vous, pas dans un cloud</h3><p data-i18n="f5d">Aucun compte à créer : vos gardes, notes et photos sont stockées sur votre appareil.</p></div></div>
+  </div>
+</section>
+
+<section class="section tint" id="screens">
+  <div class="wrap">
+    <p class="kicker dark" data-i18n="screensKicker">APERÇU</p>
+    <h2 data-i18n="screensTitle">Une application qu’on a plaisir<br>à <em>rouvrir.</em></h2>
+    <p class="sub" data-i18n="screensText">Captures de la vraie application, testée sur Android.</p>
+  </div>
+  <div class="rail">
+    <figure class="shot reveal"><div class="phone"><img src="assets/screen-home.jpg" alt="ShiftMemories – accueil" loading="lazy"></div><figcaption data-i18n="c1">Accueil</figcaption></figure>
+    <figure class="shot reveal"><div class="phone"><img src="assets/screen-planning.jpg" alt="ShiftMemories – planning" loading="lazy"></div><figcaption data-i18n="c4">Mon planning</figcaption></figure>
+    <figure class="shot reveal"><div class="phone"><img src="assets/screen-days.jpg" alt="ShiftMemories – journées" loading="lazy"></div><figcaption data-i18n="c2">Mes journées</figcaption></figure>
+    <figure class="shot reveal"><div class="phone"><img src="assets/screen-reports.jpg" alt="ShiftMemories – bilans" loading="lazy"></div><figcaption data-i18n="c3">Mes bilans</figcaption></figure>
+  </div>
+</section>
+
+<section class="section story" id="story">
+  <div class="blob b3"></div>
+  <div class="wrap story-in">
+    <div>
+      <p class="kicker" data-i18n="storyKicker">MON HISTOIRE</p>
+      <h2 data-i18n="storyTitle">Une idée née de<br><em>Sorenza.</em></h2>
+      <p class="quote" data-i18n="storyQuote">Chaque journée compte.</p>
+    </div>
+    <div class="story-text">
+      <p data-i18n="storyP1">Je m’appelle Jordan, je suis étudiant à la Hochschule Kaiserslautern. Tout est parti de Sorenza, infirmière libérale : des journées longues, des horaires qui changent d’un mois à l’autre et, à la fin, des heures à recopier à la main.</p>
+      <p data-i18n="storyP2">Je n’avais jamais programmé. J’ai appris pas à pas, avec une idée simple : lui donner un outil calme qui note ses gardes, compte ses heures et garde un souvenir de ses journées.</p>
+      <p data-i18n="storyP3">Ce qui devait rester un projet personnel est devenu ShiftMemories, ouverte à tous les soignants qui jonglent avec leur temps.</p>
+      <p class="sign" data-i18n="storySign">Jordan, créateur de ShiftMemories</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="download">
+  <div class="wrap">
+    <p class="kicker dark" data-i18n="dlKicker">TÉLÉCHARGER</p>
+    <h2 data-i18n="dlTitle">Choisissez<br>votre <em>version.</em></h2>
+    <p class="sub" data-i18n="dlText">L’application Android en APK, et la version en ligne pour iPhone et pour ordinateur.</p>
+    <div class="grid3">
+      <article class="dl reveal" id="android">
+        <div class="dl-head"><span class="ico big"><svg viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg></span><div><h3 data-i18n="androidTitle">Android</h3><span class="tag" data-i18n="androidTag">Application native</span></div></div>
+        <p data-i18n="androidText">Installez l’APK directement sur votre téléphone.</p>
+        <a class="btn btn-dark" id="apk-btn" href="https://github.com/deumojunior-svg/shiftmemories-site/releases/latest" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 5-5m-5 5-5-5M5 20h14"/></svg><span data-i18n="androidBtn">Télécharger l’APK</span></a>
+        <p class="meta" id="apk-meta" hidden></p>
+        <ol class="steps"><li data-i18n="a1">Téléchargez le fichier APK.</li><li data-i18n="a2">Ouvrez-le et, si Android le demande, autorisez l’installation depuis cette source.</li><li data-i18n="a3">Installez, puis ouvrez ShiftMemories.</li></ol>
+        <a class="more" href="https://github.com/deumojunior-svg/shiftmemories-site/releases" rel="noopener" data-i18n="androidAll">Voir les versions</a>
+      </article>
+      <article class="dl reveal" id="iphone">
+        <div class="dl-head"><span class="ico big"><svg viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="3"/><path d="M10.5 5.5h3"/></svg></span><div><h3 data-i18n="iosTitle">iPhone</h3><span class="tag" data-i18n="iosTag">Version en ligne</span></div></div>
+        <p data-i18n="iosText">Aucun téléchargement : ouvrez la version en ligne et ajoutez-la à votre écran d’accueil.</p>
+        <a class="btn btn-dark" href="app/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg><span data-i18n="iosBtn">Ouvrir sur iPhone</span></a>
+        <ol class="steps"><li data-i18n="i1">Ouvrez le lien dans Safari.</li><li data-i18n="i2">Touchez Partager (le carré avec une flèche).</li><li data-i18n="i3">Choisissez « Sur l’écran d’accueil ».</li></ol>
+      </article>
+      <article class="dl reveal" id="pc">
+        <div class="dl-head"><span class="ico big"><svg viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="12" rx="2"/><path d="M8 20h8M12 16.5V20"/></svg></span><div><h3 data-i18n="pcTitle">Ordinateur</h3><span class="tag" data-i18n="pcTag">Version en ligne</span></div></div>
+        <p data-i18n="pcText">Utilisez ShiftMemories dans votre navigateur, sur grand écran.</p>
+        <a class="btn btn-dark" href="app/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg><span data-i18n="pcBtn">Ouvrir sur ordinateur</span></a>
+        <ol class="steps"><li data-i18n="p1">Ouvrez le lien dans Chrome, Edge ou Safari.</li><li data-i18n="p2">Au besoin, cliquez sur l’icône d’installation dans la barre d’adresse.</li><li data-i18n="p3">Retrouvez ShiftMemories comme une vraie application.</li></ol>
+      </article>
+    </div>
+    <p class="callout" data-i18n="dlNote">Bon à savoir : l’application Android et les versions en ligne sont séparées. Leurs données ne se synchronisent pas (pour l’instant) et restent stockées sur chaque appareil. Pensez à exporter une sauvegarde.</p>
+  </div>
+</section>
+
+<section class="section tint" id="faq">
+  <div class="wrap narrow">
+    <p class="kicker dark" data-i18n="faqKicker">QUESTIONS</p>
+    <h2 data-i18n="faqTitle">Bon à savoir</h2>
+    <details><summary data-i18n="fq1">Puis-je l’utiliser sur iPhone ?</summary><p data-i18n="fa1">Oui, avec la version en ligne ouverte dans Safari et ajoutée à l’écran d’accueil. Il n’existe pas encore de version native sur l’App Store.</p></details>
+    <details><summary data-i18n="fq2">Mes données sont-elles envoyées quelque part ?</summary><p data-i18n="fa2">Il n’y a ni compte ni serveur ShiftMemories : vos gardes, notes et photos restent sur votre appareil.</p></details>
+    <details><summary data-i18n="fq3">Mes données passent-elles du téléphone à l’ordinateur ?</summary><p data-i18n="fa3">Pas encore. Chaque version garde ses propres données. Une synchronisation avec compte pourra venir plus tard.</p></details>
+    <details><summary data-i18n="fq4">Pourquoi Android demande-t-il une autorisation ?</summary><p data-i18n="fa4">Parce que l’APK ne vient pas du Play Store. Téléchargez-le uniquement depuis ce site ou depuis la page officielle des versions sur GitHub.</p></details>
+    <details><summary data-i18n="fq5">Puis-je y noter des informations sur mes patients ?</summary><p data-i18n="fa5">Non. ShiftMemories sert à organiser votre activité : n’y saisissez pas de données qui identifient des patients.</p></details>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap foot-in">
+    <div class="brand"><img src="assets/logo.png" alt="" width="32" height="32"><span>shift<em>memories.</em></span></div>
+    <p data-i18n="footerText">Une application pour les soignants, inspirée de Sorenza.</p>
+    <nav><a href="politique-confidentialite.html" data-i18n="privacy">Confidentialité</a><a href="#top" data-i18n="top">Haut de page</a></nav>
+  </div>
+</footer>
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
